@@ -1,0 +1,42 @@
+.hero {
+    &__bg {
+        background: url("/images/pattern-bg.png");
+        height: 250px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    &__inner {
+        .title {
+            h1 {
+                margin-top: 0;
+                color: white;
+                padding-top: 20px;
+                font-weight: 500;
+            }
+        }
+
+        .search-bar {
+            input {
+                border-top-left-radius: 8px;
+                border-bottom-left-radius: 8px;
+                border: none;
+                padding: 8px;
+                outline: none;
+            }
+
+            i {
+                border-top-right-radius: 8px;
+                border-bottom-right-radius: 8px;  
+                background: black;
+                color: white;
+                padding: 10px 13px;
+                font-size: 12px;
+            }
+        }
+        
+    }
+}
+
+

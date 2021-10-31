@@ -4,13 +4,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
+  <!--fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+  
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/dist/style.css">
 
-  <title>IP Address Tracker</title>
+  
+  <title>IP Address Tracker</title> 
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -19,16 +23,23 @@
   </style>
 </head>
 <body>
+<section class="hero">
+  <div class="hero__bg">
+    <div class="hero__inner site-bounds flex flex-fd-c flex-ai-c">
+      <div class="title">
+        <h1>IP Address Tracker</h1>
+      </div>
+      <div class="search-bar flex flex-ai-c flex-jc-c">
+        <input for="site-search" type="search" name="q" aria-label="search">
+        <i class="fas fa-chevron-right"></i>
+      </div>
+      <div class="search-output"></div>
+    </div>
+  </div>
+</section>
+<section class="map">
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+</section>
 <!--   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

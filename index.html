@@ -7,6 +7,14 @@
   <!--fontawesome-->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
   
+  <!--leaflet-->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+   crossorigin=""/>
+   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+   crossorigin=""></script>
+   
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -30,14 +38,35 @@
         <h1>IP Address Tracker</h1>
       </div>
       <div class="search-bar flex flex-ai-c flex-jc-c">
-        <input for="site-search" type="search" name="q" aria-label="search">
-        <i class="fas fa-chevron-right"></i>
+        <form name="query">
+          <input for="site-search" name="query" type="search" name="q" aria-label="search" placeholder="Search for any IP address or domain">
+          <button type="submit" name="query">
+            <i class="fas fa-chevron-right"></i>
+          </button>
+        </form>
       </div>
-      <div class="search-output"></div>
+      <div class="search-results site-bounds flex">
+        <div class="search-results__inner">
+          <label>IP ADDRESS</label>
+          <div class="ip-address"></div>
+        </div>
+        <div class="search-results__inner">
+          <label>LOCATION</label>
+          <div class="location"></div>
+        </div>
+        <div class="search-results__inner">
+          <label>TIMEZONE</label>
+          <div class="timezone"></div>
+        </div>
+        <div class="search-results__inner">
+          <label>ISP</label>
+          <div class="isp"></div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
-<section class="map">
+<section id="map">
 
 </section>
 <!--   

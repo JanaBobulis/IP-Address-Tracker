@@ -8,35 +8,92 @@
     }
 
     &__inner {
+        gap: 15px;
         .title {
             h1 {
                 margin-top: 0;
                 color: white;
                 padding-top: 20px;
                 font-weight: 500;
+                font-size: 30px;
+                margin-bottom: 25px;
             }
         }
 
         .search-bar {
-            input {
-                border-top-left-radius: 8px;
-                border-bottom-left-radius: 8px;
-                border: none;
-                padding: 8px;
-                outline: none;
-            }
-
-            i {
-                border-top-right-radius: 8px;
-                border-bottom-right-radius: 8px;  
-                background: black;
-                color: white;
-                padding: 10px 13px;
-                font-size: 12px;
+            form {
+                width: 100%;
+                font-size: 0; //removes space between button and input field
+                input {
+                    border-top-left-radius: 15px;
+                    border-bottom-left-radius: 15px;
+                    width: 80%;
+                    border: none;
+                    padding: 14px;
+                    outline: none;
+                    font-size: 14px;
+                }
+    
+                button {
+                    border: none;
+                    padding: 0;
+                    background: transparent;
+                    i {
+                        border-top-right-radius: 15px;
+                        border-bottom-right-radius: 15px;  
+                        background: black;
+                        color: white;
+                        padding: 15.5px 20px;
+                        font-size: 14px;
+                    }
+                }
             }
         }
-        
+
+        .search-results {
+            background: white;
+            border-radius: 15px;
+            margin-top: 25px;
+            z-index: 1000;
+
+            &__inner {
+                padding: 50px;
+                
+                label {
+                    letter-spacing: 2px;
+                    font-size: 13px;
+                    font-weight: 500;
+                    color: hsl(0, 0%, 59%);
+                }
+            }
+        }
     }
+}
+
+#map {
+    height: 690px;
+}
+
+@media screen and (min-width: 550px) {
+    .hero__inner {
+        .search-bar {
+            form {
+                width: 450px;
+
+                input {
+                    width: 89%;
+                    font-size: 18px;
+                }
+
+                button {
+                    i {
+                        padding: 17.5px 20px;
+                    }
+                }
+            }  
+        }
+    }
+    
 }
 
 

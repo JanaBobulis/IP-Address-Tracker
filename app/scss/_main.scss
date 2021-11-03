@@ -38,6 +38,7 @@
                     border: none;
                     padding: 0;
                     background: transparent;
+                    cursor: pointer;
                     i {
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;  
@@ -64,6 +65,15 @@
                     font-size: 13px;
                     font-weight: 500;
                     color: hsl(0, 0%, 59%);
+                }
+
+                .output {
+                    margin-top: 15px;
+                    span {
+                        font-size: 22px;
+                        font-weight: 500;
+                        
+                    }
                 }
             }
         }
@@ -95,5 +105,7 @@
     }
     
 }
+
+
 
 

@@ -12,7 +12,9 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
 var marker = L.marker([51.5, -0.09]).addTo(mymap);
 
 let baseURL = "https://geo.ipify.org/api/v2/";
-let apiKey = ""
+let apiKey = "at_fYoUZaikBOMViQjLKIjxtaP3y89rJ"
+
+console.log(apiKey)
 
 
 let ipAddress = document.getElementById('ip-address');
@@ -23,18 +25,19 @@ let timeZone = document.getElementById('timezone');
 let isp = document.getElementById('isp');
 let enteredIp = document.getElementById('ip-search');
 
-// API get request
+// // API get request
 // async function getDomain() {
-//     let response = await fetch('https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_VMqlSxLK7yy6QSSGbqGSwifDqAada');
+//     let response = await fetch('https://geo.ipify.org/service/account-balance?apiKey=at_VMqlSxLK7yy6QSSGbqGSwifDqAada');
 //     let data = await response.json();
 //     return data; 
 // }
 
 // getDomain().then(data => console.log(data));
 
-const updateUI = (ip, domain) => {
-    console.log(ip, domain)
-     fetch(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_VMqlSxLK7yy6QSSGbqGSwifDqAada&ipAddress=${ip}`)
+const updateUI = (ip) => {
+    console.log(ip)
+     fetch(`https://geo.ipify.org/api/v2/country,city,vpn?apiKey=at_fYoUZaikBOMViQjLKIjxtaP3y89rJ&ipAddress=${ip}`)
+     
      
     .then (results => results.json())
     .then (data => {

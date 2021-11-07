@@ -10,7 +10,13 @@ L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     accessToken: 'pk.eyJ1IjoiamFuYWJvYnVsaXMiLCJhIjoiY2t2aDF6bGEyMjgzOTJwcGd1OHhqdW1zYyJ9.otvWt14x89J84qEYp4l3ug'
 }).addTo(mymap);
 
-var marker = L.marker([51.5, -0.09]).addTo(mymap);
+var blackIcon = L.icon({
+    iconUrl: 'images/icon-location.svg',
+    iconSize: [35, 45], // size of the icon
+    iconAnchor: [12, 41], // point of the icon which will correspond to marker's location
+});
+
+var marker = L.marker([51.5, -0.09], {icon: blackIcon}).addTo(mymap);
 
 //Ipify API get request
 

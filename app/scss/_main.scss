@@ -39,6 +39,7 @@
                     padding: 0;
                     background: transparent;
                     cursor: pointer;
+
                     i {
                         border-top-right-radius: 15px;
                         border-bottom-right-radius: 15px;  
@@ -46,6 +47,12 @@
                         color: white;
                         padding: 15.5px 20px;
                         font-size: 14px;
+                        transition: all 0.3s ease-out;
+
+                        &:hover {
+                            background-color: hsl(0, 0%, 17%);
+                            transition: all 0.3s ease-out;
+                        }
                     }
                 }
             }
@@ -166,7 +173,7 @@
 
                 button {
                     i {
-                        padding: 17.5px 20px;
+                        padding: 17.px 20px;
                     }
                 }
             }  

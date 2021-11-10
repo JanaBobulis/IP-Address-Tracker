@@ -1,4 +1,4 @@
-# Frontend Mentor - IP address tracker solution
+# Frontend Mentor - IP address tracker
 
 This is a solution to the [IP address tracker challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ip-address-tracker-I8-0yYAH0). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -7,10 +7,9 @@ This is a solution to the [IP address tracker challenge on Frontend Mentor](http
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
+  - [Links](#links)
   - [Built with](#built-with)
 - [Author](#author)
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -29,8 +28,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/JanaBobulis/IP-Address-Tracker)
-- Live Site URL: [Add live site URL here](https://ip-address-tracker-gamma-two.vercel.app/)
+- Solution URL: [GitHub](https://github.com/JanaBobulis/IP-Address-Tracker)
+- Live Site URL: [Vercel](https://ip-address-tracker-gamma-two.vercel.app/)
 
 ### Built with
 
@@ -41,11 +40,10 @@ Users should be able to:
 - LeafletJs
 - Ipify IP Geolocation API
 
-
 ## Author
 
-- Website - [Add your name here](https://http://janabobulis.com/)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/JanaBobulis)
-- Twitter - [@yourusername](https://www.twitter.com/JBobulis)
+- Website - [@janabobulis ](https://http://janabobulis.com/)
+- Frontend Mentor - [@JanaBobulis](https://www.frontendmentor.io/profile/JanaBobulis)
+- Twitter - [@JBobulis](https://www.twitter.com/JBobulis)
 
 

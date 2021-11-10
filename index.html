@@ -19,6 +19,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <link rel="stylesheet" href="/dist/style.css">
 
   
@@ -38,13 +40,13 @@
         <h1>IP Address Tracker</h1>
       </div>
       <div class="search-bar flex flex-ai-c flex-jc-c">
-        <form name="query">
+        <form name="query" action="action.php" id="form" method="post">
           <input for="site-search" id="ip-search" name="query" type="search" name="q" aria-label="search" placeholder="Search for any IP address or domain">
           <button type="submit" name="query" id="submit-btn">
             <i class="fas fa-chevron-right"></i>
           </button>
         </form>
-        <div class="lds-ripple"><div></div><div></div></div>
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
       </div>
       <div class="search-results site-bounds flex">
         <div class="search-results__inner flex flex-fd-c">

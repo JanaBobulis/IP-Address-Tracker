@@ -21,8 +21,9 @@
         }
 
         .search-bar {
+            position: relative;
             form {
-                width: 100%;
+                width: 350px;
                 font-size: 0; //removes space between button and input field
                 input {
                     border-top-left-radius: 15px;
@@ -33,7 +34,7 @@
                     outline: none;
                     font-size: 14px;
                 }
-    
+
                 button {
                     border: none;
                     padding: 0;
@@ -42,7 +43,7 @@
 
                     i {
                         border-top-right-radius: 15px;
-                        border-bottom-right-radius: 15px;  
+                        border-bottom-right-radius: 15px;
                         background: black;
                         color: white;
                         padding: 15.5px 20px;
@@ -84,7 +85,6 @@
                     span {
                         font-size: 20px;
                         font-weight: 500;
-                        
                     }
                 }
             }
@@ -99,7 +99,7 @@
 @media screen and (min-width: 870px) {
     .search-results {
         &__inner:not(:first-child)::after {
-            content: '';
+            content: "";
             position: absolute;
             background-color: hsl(0, 0%, 59%);
             height: 64px;
@@ -111,20 +111,18 @@
             opacity: 0.6;
         }
     }
-    
 }
 
 @media screen and (min-width: 870px) {
     .hero__bg {
         .search-results {
-        &__inner {
-
-            .ouput {
-                margin-top: 15px;
+            &__inner {
+                .ouput {
+                    margin-top: 15px;
+                }
             }
         }
     }
-}
 }
 
 @media screen and (max-width: 869px) {
@@ -134,21 +132,21 @@
             max-width: 75%;
             padding-top: 15px;
             padding-bottom: 15px;
-        &__inner {
-            width: 420px;
-            height: 75px;
-            padding: 20px 20px 0 20px;
+            &__inner {
+                width: 420px;
+                height: 75px;
+                padding: 20px 20px 0 20px;
 
-            .output {
-                margin-top: 0;
+                .output {
+                    margin-top: 0;
 
-                span {
-                    font-size: 18px;
+                    span {
+                        font-size: 18px;
+                    }
                 }
             }
         }
     }
-}
 }
 
 @media screen and (max-width: 550px) {
@@ -159,7 +157,6 @@
     }
 }
 
-
 @media screen and (min-width: 550px) {
     .hero__inner {
         .search-bar {
@@ -167,7 +164,7 @@
                 width: 450px;
 
                 input {
-                    width: 89%;
+                    width: 87%;
                     font-size: 18px;
                 }
 
@@ -176,11 +173,20 @@
                         padding: 17.5px 20px;
                     }
                 }
-            }  
+            }
         }
     }
 }
 
 
+@media screen and (max-width: 370px) {
+    .hero__inner {
+        .search-bar {
+            form {
+                width: 300px;
 
+            }
+        }
+    }
+}
 

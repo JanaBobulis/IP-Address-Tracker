@@ -21,7 +21,7 @@ var marker = L.marker([51.5, -0.09], {icon: blackIcon}).addTo(mymap);
 //Ipify API get request
 
 let baseURL = "https://geo.ipify.org/api/v2/";
-let apiKey = "at_fYoUZaikBOMViQjLKIjxtaP3y89rJ";
+let API_KEY = "";
 
 let ipAddress = document.getElementById('ip-address');
 let city = document.getElementById('city');

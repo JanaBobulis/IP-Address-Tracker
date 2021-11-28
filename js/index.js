@@ -1,5 +1,3 @@
-require('dotenv').config({ path: require('find-config')('.env') })
-
 //LeafletJS map
 var mymap = L.map('map').setView([51.505, -0.09], 13);
 

@@ -1,3 +1,5 @@
+require('dotenv').config({ path: require('find-config')('.env') })
+
 //LeafletJS map
 var mymap = L.map('map').setView([51.505, -0.09], 13);
 
@@ -21,7 +23,7 @@ var marker = L.marker([51.5, -0.09], {icon: blackIcon}).addTo(mymap);
 //Ipify API get request
 
 let baseURL = "https://geo.ipify.org/api/v2/";
-let API_KEY = "at_fYoUZaikBOMViQjLKIjxtaP3y89rJ";
+let apiKey = "at_fYoUZaikBOMViQjLKIjxtaP3y89rJ";
 
 let ipAddress = document.getElementById('ip-address');
 let city = document.getElementById('city');
